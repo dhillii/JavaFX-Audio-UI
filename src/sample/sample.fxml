@@ -1,0 +1,55 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller">
+    <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+    <Button id="speaker-0"  onAction="#VolumeCtrl"  GridPane.columnIndex="0" GridPane.rowIndex="2" >
+        <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image requestedHeight="50" requestedWidth="50" url="/resources/speaker-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button id="speaker-1" onAction="#VolumeCtrl" GridPane.columnIndex="1" GridPane.rowIndex="2" >
+    <graphic>
+        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image requestedHeight="50" requestedWidth="50" url="/resources/speaker-icon.png" />
+            </image>
+        </ImageView>
+    </graphic>
+</Button>
+    <Button id="speaker-2" onAction="#VolumeCtrl" GridPane.columnIndex="2" GridPane.rowIndex="2" >
+        <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image requestedHeight="50" requestedWidth="50" url="/resources/speaker-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button id="speaker-3" onAction="#VolumeCtrl" GridPane.columnIndex="3" GridPane.rowIndex="2" >
+        <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image requestedHeight="50" requestedWidth="50" url="/resources/speaker-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Slider fx:id="slider1" orientation="VERTICAL" GridPane.columnIndex="0" max="10" min="0" visible="false"/>
+    <Slider fx:id="slider2" orientation="VERTICAL" GridPane.columnIndex="1" max="10" min="0" visible="false"/>
+    <Slider fx:id="slider3" orientation="VERTICAL" GridPane.columnIndex="2" max="10" min="0" visible="false"/>
+    <Slider fx:id="slider4" orientation="VERTICAL" GridPane.columnIndex="3" max="10" min="0" visible="false"/>
+
+</GridPane>
